@@ -1,0 +1,17 @@
+name: Mi_Primer_Workflow_prueba1
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  saludar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar mensaje
+        run: echo "Hola Carlos 👋 estás usando GitHub Actions!"
+
+
+
