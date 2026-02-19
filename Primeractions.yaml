@@ -1,0 +1,16 @@
+name: Mi primer laboratorio
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar sistema
+        run: uname -a
+
+      - name: Mostrar archivos
+        run: ls -la
+
+      - name: Mensaje
+        run: echo "Hola Carlos, Actions funcionando"
